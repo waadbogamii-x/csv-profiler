@@ -1,20 +1,14 @@
 from csv_profiler.io import read_csv_rows
 from csv_profiler.profile import basic_profile
-from csv_profiler.render import write_json, write_markdown
+from csv_profiler.render import render_json, render_md
 
 
-def main() -> None:
-    # Read CSV
+def main():
     rows = read_csv_rows("data/sample.csv")
-
-    # Compute profile
     report = basic_profile(rows)
 
-    # Write outputs
-    write_json(report, "outputs/report.json")
-    write_markdown(report, "outputs/report.md")
-
-    print("Wrote outputs/report.json and outputs/report.md")
+    render_json(report)
+    render_md(report)
 
 
 if __name__ == "__main__":
