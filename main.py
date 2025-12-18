@@ -13,3 +13,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+from csv_profiler.strings import slugify
+print(slugify("My Report 01"))

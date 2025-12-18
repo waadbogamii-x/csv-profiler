@@ -1,15 +1,12 @@
-# CSV Profiling Report
-
-## Dataset Summary
-
-- Rows: **4**
-- Columns: **4**
+# CSV Profile Report
 
 ## Columns
 
-| Column | Missing |
-|--------|---------|
-| name | 0 |
-| age | 1 |
-| city | 1 |
-| salary | 1 |
+| Column |
+|--------|
+| id |
+| first_name |
+| last_name |
+| email |
+| gender |
+| ip_address |
